@@ -15,7 +15,7 @@
 	<p>Unesite broj saputnika</p><input type="text" name="brojSaputnika">
 	<p>Unesite nacin putovanja</p><input type="text" name="nacinPutovanja">
 	<p>Unesite opis smestaja</p><input type="text" name="opisSmjestaja"><br>
-	<p>Unesite naziv destinacije</p><input type="text" name="id"><br>	
+	<p>Unesite naziv destinacije</p><input type="text" name="naziv"><br>	
 	<input type="submit" value="Dodaj ponudu">
 </form>
 	${poruka}  

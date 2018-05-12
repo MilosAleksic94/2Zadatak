@@ -52,11 +52,10 @@ public class DodajPonudu extends HttpServlet {
 		int brSap=Integer.parseInt(brojSaputnika);
 		String nacinPutovanja=request.getParameter("nacinPutovanja");
 		String opisSmestaja=request.getParameter("opisSmjestaja");
-		String idS=request.getParameter("id");
+		String naziv=request.getParameter("naziv");
+		int id=tb.idDestinacije(naziv);
 		
-		int id=tb.idDestinacije(idS);
-		
-		if (cijena.equals("")||trajanjeS.equals("")||brojSaputnika.equals("")||nacinPutovanja.equals("")||opisSmestaja.equals("")||nacinPutovanja.equals("")||idS.equals("")){
+		if (cijena.equals("")||trajanjeS.equals("")||brojSaputnika.equals("")||nacinPutovanja.equals("")||opisSmestaja.equals("")||nacinPutovanja.equals("")||naziv.equals("")){
 			String poruka="Niste unijeli sva polja";
 			request.setAttribute("poruka", poruka);
 			request.getRequestDispatcher("dodajPonudu.jsp").forward(request, response);
